@@ -37,6 +37,16 @@ Whether you're just starting with Linux or looking to refresh your knowledge, th
   <p style="font-size: 15px; color:#5D6D7E; margin: 5px 0 0;">
     Platform 3 Solutions Inc
   </p>
+ <!-- Contact Section -->
+  <p>
+    <a href="https://www.linkedin.com/in/shivabalan-k" target="_blank">
+      <img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn"/>
+    </a>
+    &nbsp;&nbsp;
+    <a href="mailto:shivabalan2002@gmail.com">
+      <img src="https://img.icons8.com/fluency/48/gmail-new.png" alt="Email"/>
+    </a>
+  </p>
 
 </div>
  
