@@ -137,3 +137,229 @@
 
   file -z data.tar.gz
   # Output: data.tar.gz: gzip compressed data, was "data.tar"
+
+```
+
+# File Search
+
+## 🔍 Using find
+
+### Search for a file by name (case-sensitive):
+
+```bash
+find /path/to/search -type f -name "filename.txt"
+```
+
+- `/path/to/search` → directory to start searching (use / for entire system or . for current directory).
+
+- `type f` → search only files.
+
+- `name` → match exact name.
+
+### 👉 Example: search in current directory
+
+```bash
+find . -type f -name "test.txt"
+```
+
+### Case-insensitive search:
+
+``` bash 
+find . -type f -iname "test.txt"
+```
+
+
+### Search for all `.txt` files:
+
+```bash
+find . -type f -name "*.txt"
+```
+
+
+## ⚡ Using locate (faster, but requires updated database)
+```bash
+locate filename.txt
+```
+
+### 👉 If database is outdated, update it with:
+```bash
+sudo updatedb
+```
+### ✅ Practical Tip
+
+If you only know part of the filename:
+```bash
+find . -type f -name "*part*"
+```
+### 📂 Search inside files with grep
+
+Basic usage:
+```bash
+grep "search_text" filename
+```
+
+Search inside all files in a directory:
+```bash
+grep "search_text" *
+```
+
+Recursive search through subdirectories:
+```bash
+grep -r "search_text" /path/to/search
+```
+
+Case-insensitive search:
+```bash
+grep -i "search_text" filename
+```
+
+Show line numbers where matches occur:
+```bash
+grep -n "search_text" filename
+```
+### 🔥 Combine with `find`
+
+Example: Find all `.txt` files containing the word "error":
+```bash
+find . -type f -name "*.txt" -exec grep -i "error" {} +
+```
+## 🔧 Advanced Tricks with find
+### 1️⃣ Search by file size
+```bash
+find . -type f -size +10M
+```
+
+
+- `+10M` → bigger than 10 MB
+
+- `-10M` → smaller than 10 MB
+
+- `100k` → exactly 100 KB
+
+### 2️⃣ Search by last modified time
+
+Files modified in the last 1 day:
+```bash
+find . -type f -mtime -1
+```
+
+- `-mtime` -1 → modified less than 1 day ago
+
+- `-mtime` +7 → modified more than 7 days ago
+
+### 3️⃣ Search by permissions
+
+Find world-writable files:
+```bash
+find . -type f -perm 777
+```
+
+### 4️⃣ Search by owner / group
+```bash
+find /var/log -type f -user root
+find /home -type f -group admin
+```
+### 5️⃣ Search and execute a command
+
+Delete all `.tmp` files:
+```bash
+find . -type f -name "*.tmp" -exec rm -f {} \;
+```
+## ⚡ Faster Alternatives
+`fd` (user-friendly `find`)
+```bash
+fd filename
+fd -e txt
+```
+
+- Much faster and simpler syntax.
+
+### `rg` (ripgrep – faster `grep`)
+
+Search inside files:
+```bash
+rg "error"
+rg -i "warning" *.log
+```
+## 📝 Quick Comparison
+
+| Tool     | Purpose                                | Speed     |
+|----------|----------------------------------------|-----------|
+| `find`   | Search by name, size, time, perms, etc | Medium    |
+| `locate` | Super-fast name search (needs updatedb)| Fast      |
+| `grep`   | Search inside files                    | Medium    |
+| `rg`     | Faster alternative to grep             | Very Fast |
+| `fd`     | Simpler & faster alternative to find   | Very Fast |
+
+## 📂 Viewing & Managing Files in CLI
+### 🔍 View file contents
+
+- Show full content:
+```bash
+cat filename.txt
+```
+
+- Show with line numbers:
+```bash
+nl filename.txt
+```
+
+- Scroll through long files (page by page):
+```bash
+less filename.txt
+```
+
+(Navigate with ↑ ↓, search with `/word`, quit with `q`)
+
+- View first / last lines:
+```bash
+head filename.txt    # first 10 lines
+tail filename.txt    # last 10 lines
+tail -f logfile.log  # live updates (great for logs)
+```
+### 🛠️ Edit files directly from terminal
+
+- With nano (simple editor):
+```bash
+nano filename.txt
+```
+
+- With vim (advanced editor):
+```bash
+vim filename.txt
+```
+### 📦 Copy / Move / Delete
+
+- Copy file:
+```bash
+cp file.txt backup.txt
+```
+
+- Move/rename file:
+```bash
+mv oldname.txt newname.txt
+```
+
+- Delete file:
+```bash
+rm file.txt
+```
+
+(Delete recursively with `rm -r folder/`)
+
+## 🔑 File Permissions & Ownership
+
+- Check permissions:
+```bash
+ls -l
+```
+
+- Change permissions:
+```bash
+chmod 755 script.sh
+```
+
+- Change owner:
+```bash
+sudo chown user:group file.txt
+```
