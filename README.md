@@ -13,15 +13,6 @@ We've compiled a comprehensive collection of beginner-level Linux commands and t
 
 - **Command Summaries**: Clear and concise explanations of core Linux commands.
 - **Usage Examples**: Real-world examples to demonstrate how each command is used.
-- **Practice Exercises**: Tasks and questions to test your understanding and application of the commands.
-- **Cheat Sheets**: Quick reference guides for frequently used commands and options.
-
-## 📚 How to Use
-
-1. **Review the Command Summaries**: Start by reading through the summaries to familiarize yourself with the basic commands and their purposes.
-2. **Practice with Examples**: Try out the examples provided to see how the commands work in real scenarios.
-3. **Test Your Knowledge**: Complete the practice exercises to reinforce your understanding and identify areas where you need more practice.
-4. **Use the Cheat Sheets**: Keep the cheat sheets handy as a quick reference while you work in the terminal.
 
 ## 🤝 Contribute
 
@@ -32,3 +23,8 @@ We welcome contributions! Feel free to add new commands, improve explanations, o
 Whether you're just starting with Linux or looking to refresh your knowledge, this repository is here to help you become more confident and proficient with Linux commands. Dive in and enjoy the learning process!
 
 ---
+
+## Author 
+## Shiva Balan K ,
+## Associate ,
+## Platform 3 Solutions.
