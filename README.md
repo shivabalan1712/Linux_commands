@@ -24,7 +24,19 @@ Whether you're just starting with Linux or looking to refresh your knowledge, th
 
 ---
 
-## Author 
-## Shiva Balan K ,
-## Associate ,
-## Platform 3 Solutions.
+# Author  
+<div align="center" style="border: 2px solid #4A90E2; border-radius: 12px; padding: 20px; width: 60%; margin: auto; background: #f9fcff; box-shadow: 0px 4px 12px rgba(0,0,0,0.1);">
+
+  <img src="https://platform3solutions.com/wp-content/uploads/2024/02/platform-3-logo.png" alt="Cloud Logo" width="80"/>
+
+  <h2 style="color:#2C3E50; margin-bottom: 10px;">Shiva Balan K</h2>
+
+  <p style="font-size: 16px; color:#34495E; margin: 0;">
+    <b>Associate Developer</b>  
+  </p>
+  <p style="font-size: 15px; color:#5D6D7E; margin: 5px 0 0;">
+    Platform 3 Solutions Inc
+  </p>
+
+</div>
+ 
