@@ -1,5 +1,5 @@
 # 🖥️ Basic Linux Commands Questions  
-**Day 1 - 23-08-2024**  
+
 This document provides a list of 30 beginner-level Linux command questions along with easy-to-understand explanations. Use these for placement training and interview preparation.
 
 ---
