@@ -94,7 +94,7 @@ This repo is your **living reference guide** to Linux mastery. Start small, prac
   <h2 style="color:#2C3E50; margin-bottom: 10px;">Shiva Balan K</h2>
 
   <p style="font-size: 16px; color:#34495E; margin: 0;">
-    <b>Associate Developer</b>  
+    <b>DevOps Engg</b>  
   </p>
   <p style="font-size: 15px; color:#5D6D7E; margin: 5px 0 0;">
     Platform 3 Solutions Inc
